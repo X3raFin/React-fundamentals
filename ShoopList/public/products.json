@@ -1,0 +1,144 @@
+{
+	"products": [
+		{
+			"id": "prod_001",
+			"name": "Kawa ziarnista Arabica",
+			"price": 35.99,
+			"description": "Wyselekcjonowana 100% Arabica, intensywny aromat i delikatny smak.",
+			"imageUrl": "https://placehold.co/200x200?text=Kawa"
+		},
+		{
+			"id": "prod_002",
+			"name": "Herbata zielona Sencha",
+			"price": 19.50,
+			"description": "Klasyczna japońska Sencha, orzeźwiająca i pełna antyoksydantów.",
+			"imageUrl": "https://placehold.co/200x200?text=Herbata"
+		},
+		{
+			"id": "prod_003",
+			"name": "Miód lipowy naturalny",
+			"price": 28.00,
+			"description": "Prawdziwy miód lipowy z polskich pasiek, prosto z natury.",
+			"imageUrl": "https://placehold.co/200x200?text=Miod"
+		},
+		{
+			"id": "prod_004",
+			"name": "Oliwa z oliwek extra virgin",
+			"price": 49.90,
+			"description": "Wysokiej jakości oliwa prosto z Grecji, idealna do sałatek.",
+			"imageUrl": "https://placehold.co/200x200?text=Oliwa"
+		},
+		{
+			"id": "prod_005",
+			"name": "Czekolada gorzka 70% kakao",
+			"price": 9.99,
+			"description": "Intensywna, gorzka czekolada dla prawdziwych smakoszy.",
+			"imageUrl": "https://placehold.co/200x200?text=Czekolada"
+		},
+		{
+			"id": "prod_006",
+			"name": "Makaron pełnoziarnisty Spaghettoni",
+			"price": 7.20,
+			"description": "Zdrowy makaron z pełnego ziarna, doskonały do każdego sosu.",
+			"imageUrl": "https://placehold.co/200x200?text=Makaron"
+		},
+		{
+			"id": "prod_007",
+			"name": "Ryż Basmati Premium",
+			"price": 14.99,
+			"description": "Aromatyczny ryż Basmati, sypki i idealny do dań azjatyckich.",
+			"imageUrl": "https://placehold.co/200x200?text=Ry%C5%BC"
+		},
+		{
+			"id": "prod_008",
+			"name": "Orzechy włoskie łuskane",
+			"price": 22.00,
+			"description": "Świeże orzechy włoskie, bogate w kwasy Omega-3.",
+			"imageUrl": "https://placehold.co/200x200?text=Orzechy"
+		},
+		{
+			"id": "prod_009",
+			"name": "Suszone pomidory w oleju",
+			"price": 18.75,
+			"description": "Pomidory suszone na słońcu, marynowane w aromatycznej oliwie.",
+			"imageUrl": "https://placehold.co/200x200?text=Pomidory"
+		},
+		{
+			"id": "prod_010",
+			"name": "Ocet balsamiczny Modena",
+			"price": 32.50,
+			"description": "Oryginalny ocet balsamiczny z Modeny, dojrzewający w beczkach.",
+			"imageUrl": "https://placehold.co/200x200?text=Ocet"
+		},
+		{
+			"id": "prod_011",
+			"name": "Dżem truskawkowy 100% owoców",
+			"price": 12.00,
+			"description": "Słodki dżem z dojrzałych truskawek, bez dodatku cukru.",
+			"imageUrl": "https://placehold.co/200x200?text=Dzem"
+		},
+		{
+			"id": "prod_012",
+			"name": "Płatki owsiane górskie",
+			"price": 5.99,
+			"description": "Pełnoziarniste płatki owsiane, idealne na zdrowe śniadanie.",
+			"imageUrl": "https://placehold.co/200x200?text=Owsianka"
+		},
+		{
+			"id": "prod_013",
+			"name": "Kiełbasa wiejska dojrzewająca",
+			"price": 45.00,
+			"description": "Tradycyjna kiełbasa wiejska, suszona i dojrzewająca, z Podlasia.",
+			"imageUrl": "https://placehold.co/200x200?text=Kielbasa"
+		},
+		{
+			"id": "prod_014",
+			"name": "Ser kozi dojrzewający",
+			"price": 39.99,
+			"description": "Delikatny ser kozi o wyrazistym smaku, idealny do wina.",
+			"imageUrl": "https://placehold.co/200x200?text=Ser"
+		},
+		{
+			"id": "prod_015",
+			"name": "Wino czerwone wytrawne",
+			"price": 65.00,
+			"description": "Eleganckie wino z nutami owocowymi, doskonałe do czerwonych mięs.",
+			"imageUrl": "https://placehold.co/200x200?text=Wino"
+		},
+		{
+			"id": "prod_016",
+			"name": "Cukier trzcinowy nierafinowany",
+			"price": 11.50,
+			"description": "Naturalny cukier trzcinowy o karmelowym posmaku.",
+			"imageUrl": "https://placehold.co/200x200?text=Cukier"
+		},
+		{
+			"id": "prod_017",
+			"name": "Mąka pszenna typ 500",
+			"price": 4.20,
+			"description": "Uniwersalna mąka pszenna, idealna do wypieków i sosów.",
+			"imageUrl": "https://placehold.co/200x200?text=Maka"
+		},
+		{
+			"id": "prod_018",
+			"name": "Jajka ekologiczne",
+			"price": 10.00,
+			"description": "Jajka od kur z wolnego wybiegu, świeże i smaczne.",
+			"imageUrl": "https://placehold.co/200x200?text=Jajka"
+		},
+		{
+			"id": "prod_019",
+			"name": "Sól himalajska różowa",
+			"price": 8.50,
+			"description": "Bogata w minerały różowa sól z Himalajów.",
+			"imageUrl": "https://placehold.co/200x200?text=Sol"
+		},
+		{
+			"id": "prod_020",
+			"name": "Pieprz czarny ziarnisty",
+			"price": 13.70,
+			"description": "Świeżo zmielony czarny pieprz, dla intensywnego smaku.",
+			"imageUrl": "https://placehold.co/200x200?text=Pieprz"
+		}
+	]
+}
