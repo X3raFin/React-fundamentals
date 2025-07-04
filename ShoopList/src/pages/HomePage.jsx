@@ -61,7 +61,7 @@ function ProductCard({ product }) {
       <div>
         <h3>{product.name}</h3>
         <h4>{product.description}</h4>
-        <p>Cena: {product.price}</p>
+        <p>Cena: {product.price} zł</p>
       </div>
       <button onClick={() => handleClick(product)}>Dodaj do koszyka</button>
     </div>
