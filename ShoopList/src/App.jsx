@@ -3,8 +3,19 @@ import './App.css'
 
 function App() {
   const [products, setProducts] = useState([]);
-
   const url = "http://127.0.0.1:5173/products.json";
+
+  return (
+    <>
+      <Products products={products}
+        setProducts={setProducts}
+        url={url}
+      />
+    </>
+  )
+}
+
+function Products({ products, setProducts, url }) {
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,7 +26,6 @@ function App() {
         }
         const json = await response.json();
         setProducts(json.products);
-        // console.log(json.products[0]);
       }
       catch (error) {
         console.error("Cos poszło nie tak:" + error);
@@ -28,11 +38,13 @@ function App() {
     <div>
       {products.map(product => {
         return (
-          <div key={product.id}>
+          <div className="cont" key={product.id}>
             <img src={product.imageUrl} alt={product.name} />
-            <h1>{product.name}</h1>
-            <h3>{product.description}</h3>
-            <p>Cena: {product.price}</p>
+            <div>
+              <h3>{product.name}</h3>
+              <h4>{product.description}</h4>
+              <p>Cena: {product.price}</p>
+            </div>
           </div>
         )
       })}
