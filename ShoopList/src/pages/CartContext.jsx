@@ -27,12 +27,26 @@ export default function ContextProvider({ children }) {
 		return cartStatus.reduce((total, item) => total + item.quantity, 0);
 	};
 
+	const incraseItemQuantity = productId => {
+		setCartStatus(prevItem => {return prevItem.map(item => item.id === productId ? {...item, quantity: item.quantity + 1} : item)});
+	};
+
+	const reduceItemQuantity = product => {
+		if(product.quantity === 1) 
+		{
+			return removeItemFromCart(product.id);
+		}
+		setCartStatus(prevItem => {return prevItem.map(item => item.id === product.id ? {...item, quantity: item.quantity - 1} : item)});
+	}
+
 	const contextValue = {
 		cartStatus,
 		addItemToCart,
 		removeItemFromCart,
 		getQuantity,
 		getTotalPrice,
+		incraseItemQuantity,
+		reduceItemQuantity,
 	};
 
 	return (

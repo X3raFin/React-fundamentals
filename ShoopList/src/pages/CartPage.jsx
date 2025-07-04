@@ -11,13 +11,17 @@ function CartPage() {
 }
 
 function ProductCard({product}){
+	const {removeItemFromCart, incraseItemQuantity, reduceItemQuantity} = useCart();
+	console.log(product);
 	return (
 		<div className="cont">
 		<img src={product.imageUrl} alt={product.name} />
 		<div>
 			<h3>{product.name}</h3>
+			<h3><button onClick={() => incraseItemQuantity(product.id)}>+</button>{product.quantity}<button onClick={() => reduceItemQuantity(product)}>-</button></h3>
 			<h4>{product.price} zł</h4>
 		</div>
+		<button onClick={() => removeItemFromCart(product.id)}>Usuń pozycje</button>
 		</div>
 	);
 }
