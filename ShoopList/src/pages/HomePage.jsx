@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import '../App.css'
 
-function App() {
+function HomePage() {
   const [products, setProducts] = useState([]);
   const url = "http://127.0.0.1:5173/products.json";
 
@@ -52,4 +52,4 @@ function Products({ products, setProducts, url }) {
   )
 }
 
-export default App
+export default HomePage
