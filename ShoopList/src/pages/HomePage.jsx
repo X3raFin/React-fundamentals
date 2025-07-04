@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useCart } from './CartContext';
 import '../App.css'
 
 function HomePage() {
@@ -39,7 +40,7 @@ function Products({ products, setProducts, url }) {
     <div>
       {products.map(product => {
         return (
-          <ProductCard product={product} />
+          <ProductCard product={product} key={product.id} />
         );
       })}
     </div>
@@ -47,15 +48,22 @@ function Products({ products, setProducts, url }) {
 }
 
 function ProductCard({ product }) {
+  const { addItemToCart } = useCart();
+
+  const handleClick = (product) => {
+    addItemToCart(product);
+    alert("Product " + product.name + " został dodany do koszyka.");
+  }
+
   return (
-    <div className="cont" key={product.id}>
+    <div className="cont">
       <img src={product.imageUrl} alt={product.name} />
       <div>
         <h3>{product.name}</h3>
         <h4>{product.description}</h4>
         <p>Cena: {product.price}</p>
       </div>
-      <button>Dodaj do koszyka</button>
+      <button onClick={() => handleClick(product)}>Dodaj do koszyka</button>
     </div>
   );
 }
