@@ -3,6 +3,7 @@ import '../App.css'
 
 function HomePage() {
   const [products, setProducts] = useState([]);
+  const [cartStatus, setCartStatus] = useState([]);
   const url = "http://127.0.0.1:5173/products.json";
 
   return (
@@ -38,18 +39,25 @@ function Products({ products, setProducts, url }) {
     <div>
       {products.map(product => {
         return (
-          <div className="cont" key={product.id}>
-            <img src={product.imageUrl} alt={product.name} />
-            <div>
-              <h3>{product.name}</h3>
-              <h4>{product.description}</h4>
-              <p>Cena: {product.price}</p>
-            </div>
-          </div>
-        )
+          <ProductCard product={product} />
+        );
       })}
     </div>
-  )
+  );
+}
+
+function ProductCard({ product }) {
+  return (
+    <div className="cont" key={product.id}>
+      <img src={product.imageUrl} alt={product.name} />
+      <div>
+        <h3>{product.name}</h3>
+        <h4>{product.description}</h4>
+        <p>Cena: {product.price}</p>
+      </div>
+      <button>Dodaj do koszyka</button>
+    </div>
+  );
 }
 
 export default HomePage
