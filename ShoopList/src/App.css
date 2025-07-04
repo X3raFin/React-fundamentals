@@ -22,3 +22,23 @@ nav {
 nav img {
 	height: 40px;
 }
+
+nav div{
+	position: relative;
+	display: inline-block;
+}
+
+nav div div{
+	z-index: 2;
+	height: 15px;
+	width: 15px;
+	background-color: red;
+	border-radius: 20px;
+	margin: 0px;
+	padding: 0%;
+	position: absolute;
+	top: 27px;
+	left: 25px;
+	justify-content: center;
+	align-items: center;
+}
